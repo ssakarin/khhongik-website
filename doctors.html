@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="경희홍익한의원 허진혁 대표원장과 김상준 진료원장을 소개합니다.">
+  <meta name="description" content="경희홍익한의원 허진혁 대표원장과 김상준 진료원장의 약력과 요일별 진료 일정을 확인하세요.">
   <meta name="theme-color" content="#0a2647">
   <title>의료진 소개 | 경희홍익한의원</title>
   <link rel="icon" type="image/webp" href="assets/icon.webp">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
@@ -17,8 +17,8 @@
       <nav aria-label="주 메뉴">
         <a href="care.html">주요 진료</a>
         <a href="doctors.html" aria-current="page">의료진</a>
-        <a href="visit.html">진료시간·위치</a>
-        <a href="blog.html">블로그</a>
+        <a href="visit.html">방문 안내</a>
+        <a href="blog.html">소식·건강정보</a>
       </nav>
       <a class="header-phone" href="tel:0512620780">051-262-0780</a>
     </div>
@@ -29,7 +29,7 @@
       <div class="section-heading">
         <h1 class="page-title">의료진 소개</h1>
       </div>
-      <div class="doctor-grid">
+      <div class="doctor-grid" id="schedule">
         <article class="doctor-card">
           <div class="doctor-photo"><img src="assets/heo.webp" width="272" height="326" loading="lazy" alt="허진혁 대표원장"></div>
           <div class="doctor-info">
@@ -45,6 +45,18 @@
                 <li>대한한의영상학회 회원</li>
               </ul>
             </details>
+          </div>
+          <div class="doctor-schedule">
+            <table>
+              <caption>허진혁 원장 진료 일정</caption>
+              <thead>
+                <tr><th scope="col">시간</th><th scope="col">월</th><th scope="col">화</th><th scope="col">수</th><th scope="col">목</th><th scope="col">금</th><th scope="col">토</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">오전</th><td>진료</td><td>진료</td><td>진료</td><td>진료</td><td>진료</td><td rowspan="2">진료</td></tr>
+                <tr><th scope="row">오후</th><td>진료</td><td>진료</td><td>진료</td><td class="off-duty">휴진</td><td>진료</td></tr>
+              </tbody>
+            </table>
           </div>
         </article>
         <article class="doctor-card">
@@ -63,8 +75,22 @@
               </ul>
             </details>
           </div>
+          <div class="doctor-schedule">
+            <table>
+              <caption>김상준 원장 진료 일정</caption>
+              <thead>
+                <tr><th scope="col">시간</th><th scope="col">월</th><th scope="col">화</th><th scope="col">수</th><th scope="col">목</th><th scope="col">금</th><th scope="col">토</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">오전</th><td>진료</td><td class="off-duty">휴진</td><td>진료</td><td>진료</td><td>진료</td><td rowspan="2">진료</td></tr>
+                <tr><th scope="row">오후</th><td>진료</td><td class="off-duty">휴진</td><td>진료</td><td>진료</td><td>진료</td></tr>
+              </tbody>
+            </table>
+          </div>
         </article>
       </div>
+      <p class="schedule-note">토요일은 09:30–14:00에 진료합니다. 원장별 일정은 바뀔 수 있으니 방문 전 <a href="tel:0512620780">전화로 확인</a>해 주세요.</p>
+      <a class="text-link" href="visit.html#first-visit">진료 예약 안내 <span aria-hidden="true">→</span></a>
     </div>
   </main>
 

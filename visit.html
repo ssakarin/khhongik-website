@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="경희홍익한의원 진료시간, 전화번호, 다대포해수욕장역에서 오시는 길과 무료 주차 안내입니다.">
+  <meta name="description" content="경희홍익한의원 네이버 예약, 첫 방문 준비, 진료시간과 오시는 길, 무료 주차를 안내합니다.">
   <meta name="theme-color" content="#0a2647">
-  <title>진료시간과 오시는 길 | 경희홍익한의원</title>
+  <title>방문 안내 | 경희홍익한의원</title>
   <link rel="icon" type="image/webp" href="assets/icon.webp">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
@@ -17,8 +17,8 @@
       <nav aria-label="주 메뉴">
         <a href="care.html">주요 진료</a>
         <a href="doctors.html">의료진</a>
-        <a href="visit.html" aria-current="page">진료시간·위치</a>
-        <a href="blog.html">블로그</a>
+        <a href="visit.html" aria-current="page">방문 안내</a>
+        <a href="blog.html">소식·건강정보</a>
       </nav>
       <a class="header-phone" href="tel:0512620780">051-262-0780</a>
     </div>
@@ -27,8 +27,28 @@
   <main id="main" class="visit">
     <div class="section container">
       <div class="section-heading">
-        <h1 class="page-title">진료시간과 오시는 길</h1>
+        <h1 class="page-title">방문 안내</h1>
+        <nav class="page-links" aria-label="방문 안내 바로가기">
+          <a href="#first-visit">첫 방문</a>
+          <a href="#hours">진료시간</a>
+          <a href="#directions">오시는 길</a>
+          <a href="#faq">자주 묻는 질문</a>
+        </nav>
       </div>
+      <section class="visit-card first-visit" id="first-visit" aria-labelledby="first-visit-title">
+        <div>
+          <h2 id="first-visit-title">처음 방문하시나요?</h2>
+          <ul>
+            <li>네이버에서 예약하거나 전화로 방문 가능 시간을 문의해 주세요.</li>
+            <li>건강보험 진료를 받으실 때는 신분증이나 모바일 건강보험증을 준비해 주세요.</li>
+            <li>복용 중인 약 목록과 이전 검사 결과가 있다면 가져오세요.</li>
+          </ul>
+        </div>
+        <div class="visit-actions">
+          <a class="button button-primary" href="https://m.place.naver.com/hospital/13249544/booking">네이버 예약 <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="tel:0512620780">051-262-0780</a>
+        </div>
+      </section>
       <div class="visit-grid">
         <article class="visit-card" id="hours">
           <h2>진료시간</h2>
@@ -39,7 +59,7 @@
             <div><dt>일요일</dt><dd>휴진</dd></div>
           </dl>
           <p class="visit-note">공휴일 진료는 전화로 확인해 주세요.</p>
-          <a class="phone-large" href="tel:0512620780"><span>전화 문의</span><strong>051-262-0780</strong></a>
+          <a class="visit-link" href="doctors.html#schedule">의료진별 진료 일정 <span aria-hidden="true">→</span></a>
         </article>
         <article class="visit-card directions" id="directions">
           <h2>오시는 길</h2>
@@ -47,9 +67,30 @@
           <p class="visit-note">다대포해수욕장역 1번 출구 앞</p>
           <img class="map" src="assets/parking-map.webp" width="1192" height="499" alt="다대포해수욕장역 1번 출구에서 한의원 입구와 대우 주차장으로 가는 약도">
           <p class="parking"><strong>대우 주차장 무료 주차</strong><span>주차 후 접수 시 말씀해 주세요.</span></p>
-          <a class="button button-map" href="https://map.naver.com/p/search/경희홍익한의원">네이버 지도 <span aria-hidden="true">↗</span></a>
+          <a class="button button-map" href="https://map.naver.com/p/entry/place/13249544">네이버 지도 <span aria-hidden="true">↗</span></a>
         </article>
       </div>
+      <section class="visit-card visit-faq" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">자주 묻는 질문</h2>
+        <dl>
+          <div>
+            <dt>당일 진료나 원장님 지정은 어떻게 확인하나요?</dt>
+            <dd>당일 방문이거나 특정 원장님의 진료를 원하시면 <a href="tel:0512620780">전화로 가능한 시간</a>을 확인해 주세요.</dd>
+          </div>
+          <div id="traffic-accident">
+            <dt>교통사고로 처음 방문할 때 무엇을 준비하나요?</dt>
+            <dd>자동차보험 접수 여부와 방문 시 필요한 정보를 <a href="tel:0512620780">미리 문의</a>해 주세요.</dd>
+          </div>
+          <div>
+            <dt>차를 가져가면 어디에 주차하나요?</dt>
+            <dd>대우 주차장에 주차하신 뒤 접수할 때 말씀해 주세요. <a href="#directions">주차장 약도 보기</a></dd>
+          </div>
+          <div>
+            <dt>진료비나 서류 발급을 미리 확인할 수 있나요?</dt>
+            <dd>궁금한 진료 항목이나 필요한 서류 이름을 <a href="tel:0512620780">전화로 알려 주세요</a>.</dd>
+          </div>
+        </dl>
+      </section>
     </div>
   </main>
 
