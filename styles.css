@@ -236,9 +236,8 @@ details[open] .expand-icon { transform: rotate(45deg); }
   border-radius: 15px;
   overflow: hidden;
 }
-.doctor-photo { overflow: hidden; background: var(--ice); }
-.doctor-photo img { width: 100%; aspect-ratio: 1.05; object-fit: cover; object-position: center 12%; }
-.doctor-photo-kim img { object-position: 54% center; transform: scale(1.18); transform-origin: 53% 42%; }
+.doctor-photo { display: flex; align-self: stretch; align-items: end; overflow: hidden; background: #e2edf5; }
+.doctor-photo img { width: 100%; height: auto; aspect-ratio: 1; }
 .doctor-info { align-self: center; padding: 24px; }
 .doctor-role { color: var(--blue); font-size: 14px; font-weight: 740; margin-bottom: 6px; }
 .doctor-info h2 { font-size: clamp(29px, 3.3vw, 41px); font-weight: 800; }
@@ -383,8 +382,8 @@ details[open] .expand-icon { transform: rotate(45deg); }
   .clinic-entrance { grid-template-columns: 1fr; }
   .clinic-update .text-link { margin-inline-start: 0; }
   .doctor-card { grid-template-columns: minmax(105px, .58fr) 1fr; }
-  .doctor-photo { align-self: stretch; }
-  .doctor-photo img { height: 100%; max-height: 218px; }
+  .doctor-photo { position: relative; }
+  .doctor-photo img { position: absolute; inset: 0; height: 100%; max-height: 218px; object-fit: cover; object-position: center top; }
   .blog-heading { flex-wrap: wrap; gap: 5px; }
   .posts a { grid-template-columns: 1fr 18px; gap: 2px 12px; padding-block: 12px; }
   .post-meta { flex-direction: row; align-items: baseline; gap: 10px; }
