@@ -238,10 +238,7 @@ details[open] .expand-icon { transform: rotate(45deg); }
 .page-photo { background: var(--white); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 .page-photo img { width: 100%; }
 .page-photo figcaption { padding: 11px 14px; color: var(--muted); font-size: 14px; font-weight: 680; }
-.detail-content > .page-photo + .detail-section { margin-top: 25px; }
-.detail-section .page-photo, .detail-section + .page-photo { margin-top: 20px; }
-.page-photo-compact { max-width: 480px; }
-.ultrasound-photo { width: min(100%, 280px); }
+.equipment-photo { max-width: 480px; margin-bottom: 28px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 
 .doctors, .visit { background: var(--surface); }
 .doctor-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; }
