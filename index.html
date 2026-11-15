@@ -12,7 +12,7 @@
   <meta property="og:title" content="경희홍익한의원 | 부산 다대포">
   <meta property="og:description" content="부산 사하구 다대포 경희홍익한의원. 주요 진료, 의료진별 일정, 네이버 예약과 첫 방문 안내를 확인하세요.">
   <meta property="og:url" content="https://ssakarin.github.io/khhongik-website/">
-  <meta property="og:image" content="https://ssakarin.github.io/khhongik-website/assets/clinic-team.webp">
+  <meta property="og:image" content="https://ssakarin.github.io/khhongik-website/assets/clinic-team-hero.webp">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -20,7 +20,7 @@
   "@id": "https://ssakarin.github.io/khhongik-website/#clinic",
   "name": "경희홍익한의원",
   "url": "https://ssakarin.github.io/khhongik-website/",
-  "image": "https://ssakarin.github.io/khhongik-website/assets/clinic-team.webp",
+  "image": "https://ssakarin.github.io/khhongik-website/assets/clinic-team-hero.webp",
   "logo": "https://ssakarin.github.io/khhongik-website/assets/logo.webp",
   "telephone": "+82-51-262-0780",
   "address": {
@@ -42,7 +42,7 @@
 }
   </script>
   <link rel="icon" type="image/webp" href="assets/icon.webp">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
@@ -73,7 +73,14 @@
           </div>
         </div>
         <figure class="hero-photo">
-          <img src="assets/clinic-team.webp" width="1218" height="755" alt="경희홍익한의원 허진혁 대표원장과 김상준 진료원장" fetchpriority="high">
+          <img src="assets/clinic-team-hero.webp"
+               srcset="assets/clinic-team-hero-small.webp 768w, assets/clinic-team-hero.webp 1536w"
+               sizes="(max-width: 800px) calc(100vw - 36px), (max-width: 1296px) 49vw, 620px"
+               width="1536" height="1024" alt="경희홍익한의원 허진혁 대표원장과 김상준 진료원장" fetchpriority="high">
+          <figcaption class="hero-doctors">
+            <span><strong>허진혁</strong> 대표원장</span>
+            <span><strong>김상준</strong> 진료원장</span>
+          </figcaption>
         </figure>
       </div>
     </section>
