@@ -209,9 +209,6 @@ details[open] .expand-icon { transform: rotate(45deg); }
 .schedule-note a, .visit-faq dd a { text-decoration: underline; text-underline-offset: 3px; }
 
 .visit { background: var(--navy); color: var(--white); }
-.page-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
-.page-links a { padding: 7px 13px; border: 1px solid #55748e; border-radius: 6px; color: #eaf5fc; font-size: 14px; font-weight: 680; }
-.page-links a:hover { background: #1c3d60; }
 .visit-grid { display: grid; grid-template-columns: .84fr 1.16fr; gap: 16px; }
 .visit-card { min-width: 0; padding: clamp(22px, 3vw, 36px); border: 1px solid #355571; border-radius: 14px; background: #123253; }
 .visit-card h2 { margin-bottom: 20px; font-size: 26px; font-weight: 760; }
