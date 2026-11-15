@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="경희홍익한의원 비급여 진료비와 제증명 수수료를 확인하세요.">
+  <meta name="theme-color" content="#152f49">
+  <title>진료비 안내 | 경희홍익한의원</title>
+  <link rel="canonical" href="https://ssakarin.github.io/khhongik-website/fees.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="경희홍익한의원">
+  <meta property="og:title" content="진료비 안내 | 경희홍익한의원">
+  <meta property="og:description" content="경희홍익한의원 비급여 진료비와 제증명 수수료를 확인하세요.">
+  <meta property="og:url" content="https://ssakarin.github.io/khhongik-website/fees.html">
+  <meta property="og:image" content="https://ssakarin.github.io/khhongik-website/assets/clinic-team.webp">
+  <link rel="icon" type="image/webp" href="assets/icon.webp">
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="fees.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.webp" width="630" height="100" alt="경희홍익한의원"></a>
+      <nav aria-label="주 메뉴">
+        <a href="care.html">주요 진료</a>
+        <a href="doctors.html">의료진</a>
+        <a href="visit.html">방문 안내</a>
+        <a href="fees.html" aria-current="page">진료비 안내</a>
+        <a href="blog.html">소식·건강정보</a>
+      </nav>
+      <a class="header-phone" href="tel:0512620780">051-262-0780</a>
+    </div>
+  </header>
+
+  <main id="main" class="section container fees">
+    <div class="section-heading">
+      <h1 class="page-title">진료비 안내</h1>
+      <p class="page-lead">비급여 진료비와 진단서·확인서 발급 비용을 확인할 수 있습니다.</p>
+    </div>
+    <div class="fee-lookup" hidden>
+      <label for="fee-query">항목명 검색</label>
+      <input id="fee-query" type="search" placeholder="예: 약침, 한약, 확인서">
+      <p id="fee-search-status" role="status"></p>
+    </div>
+    <div class="fee-groups">
+      <section class="fee-group" id="herbal-month" aria-labelledby="herbal-month-title">
+        <h2 id="herbal-month-title">한약 · 개월 단위</h2>
+        <p class="fee-note fee-scroll-note">표를 좌우로 움직여 다른 기간의 비용을 확인할 수 있습니다.</p>
+        <div class="fee-table" tabindex="0" role="region" aria-labelledby="herbal-month-title">
+          <table aria-labelledby="herbal-month-title">
+            <thead><tr><th scope="col">구분</th><th scope="col">1개월</th><th scope="col">2개월</th><th scope="col">3개월</th><th scope="col">6개월</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">일반(치료)</th><td>300,000원</td><td>570,000원</td><td>810,000원</td><td>1,530,000원</td></tr>
+            <tr><th scope="row">상대</th><td>400,000원</td><td>760,000원</td><td>1,080,000원</td><td>2,040,000원</td></tr>
+            <tr><th scope="row">분골</th><td>500,000원</td><td>950,000원</td><td>1,350,000원</td><td>2,550,000원</td></tr>
+            <tr><th scope="row">기름분골</th><td>600,000원</td><td>1,140,000원</td><td>1,620,000원</td><td>3,060,000원</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="fee-group" id="herbal-course" aria-labelledby="herbal-course-title">
+        <h2 id="herbal-course-title">한약 · 제 단위</h2>
+        <div class="fee-table">
+          <table aria-labelledby="herbal-course-title">
+            <thead><tr><th scope="col">구분</th><th scope="col">1제</th><th scope="col">2제</th><th scope="col">3제</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">일반(치료)</th><td>250,000원</td><td>470,000원</td><td>690,000원</td></tr>
+            <tr><th scope="row">상대</th><td>350,000원</td><td>650,000원</td><td>950,000원</td></tr>
+            <tr><th scope="row">분골</th><td>450,000원</td><td>850,000원</td><td>1,250,000원</td></tr>
+            <tr><th scope="row">기름분골</th><td>600,000원</td><td>1,150,000원</td><td>1,700,000원</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="fee-group" id="injections" aria-labelledby="injections-title">
+        <h2 id="injections-title">약침</h2>
+        <div class="fee-table">
+          <table aria-labelledby="injections-title">
+            <thead><tr><th scope="col">항목</th><th scope="col">비용</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">약침 1번</th><td>5,000원</td></tr>
+            <tr><th scope="row">약침 2번</th><td>10,000원</td></tr>
+            <tr><th scope="row">약침 3번</th><td>10,000원</td></tr>
+            <tr><th scope="row">약침 4번</th><td>30,000원</td></tr>
+            <tr><th scope="row">자하거수</th><td>30,000원</td></tr>
+            <tr><th scope="row">라인라침</th><td>30,000원</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="fee-group" id="packages" aria-labelledby="packages-title">
+        <h2 id="packages-title">약침 패키지</h2>
+        <div class="fee-table">
+          <table aria-labelledby="packages-title">
+            <thead><tr><th scope="col">항목</th><th scope="col">총 횟수</th><th scope="col">비용</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">약침 6회</th><td>6회 (5회 + 1회)</td><td>25,000원</td></tr>
+            <tr><th scope="row">약침 13회</th><td>13회 (10회 + 3회)</td><td>50,000원</td></tr>
+            <tr><th scope="row">자하거수 10회</th><td>10회</td><td>270,000원</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="fee-group" id="weight-program" aria-labelledby="weight-program-title">
+        <h2 id="weight-program-title">린다이어트</h2>
+        <p class="fee-note">디톡스환 7포와 주차별 다이어트환 21포 구성입니다. 행사 적용 기간과 조건은 접수처에 문의해 주세요.</p>
+        <div class="fee-table">
+          <table aria-labelledby="weight-program-title">
+            <thead><tr><th scope="col">기간</th><th scope="col">기본가</th><th scope="col">행사가</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">4주</th><td>240,000원</td><td>—</td></tr>
+            <tr><th scope="row">12주</th><td>540,000원</td><td>470,000원</td></tr>
+            <tr><th scope="row">24주</th><td>980,000원</td><td>910,000원</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="fee-group" id="other-fees" aria-labelledby="other-fees-title">
+        <h2 id="other-fees-title">기타 항목</h2>
+        <div class="fee-table">
+          <table aria-labelledby="other-fees-title">
+            <thead><tr><th scope="col">항목</th><th scope="col">기준</th><th scope="col">비용</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">쌍화탕</th><td>1일분 2팩</td><td>10,000원</td></tr>
+            <tr><th scope="row">당귀수산</th><td>1일분 2팩</td><td>10,000원</td></tr>
+            <tr><th scope="row">소화제</th><td>—</td><td>5,000원</td></tr>
+            <tr><th scope="row">파스</th><td>—</td><td>4,000원</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="fee-group" id="documents" aria-labelledby="documents-title">
+        <h2 id="documents-title">제증명 수수료</h2>
+        <div class="fee-table">
+          <table aria-labelledby="documents-title">
+            <thead><tr><th scope="col">항목</th><th scope="col">비용</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">진단서·확인서</th><td>1,000원</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <p class="fee-contact">건강보험 적용 항목의 본인부담금과 서류 발급 절차는 <a href="tel:0512620780">051-262-0780</a>으로 문의해 주세요.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo-light.webp" width="630" height="86" alt="경희홍익한의원">
+      <address>부산 사하구 다대로 698 수정프라자 3층 <a href="tel:0512620780">051-262-0780</a></address>
+    </div>
+  </footer>
+  <nav class="mobile-actions" aria-label="빠른 문의">
+    <a href="tel:0512620780">전화 문의 <span aria-hidden="true">↗</span></a>
+    <a href="visit.html#directions">오시는 길 <span aria-hidden="true">↗</span></a>
+  </nav>
+</body>
+</html>

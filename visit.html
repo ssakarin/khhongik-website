@@ -4,10 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="경희홍익한의원 네이버 예약, 첫 방문 준비, 진료시간과 오시는 길, 무료 주차를 안내합니다.">
-  <meta name="theme-color" content="#0a2647">
+  <meta name="theme-color" content="#152f49">
   <title>방문 안내 | 경희홍익한의원</title>
+  <link rel="canonical" href="https://ssakarin.github.io/khhongik-website/visit.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="경희홍익한의원">
+  <meta property="og:title" content="방문 안내 | 경희홍익한의원">
+  <meta property="og:description" content="경희홍익한의원 네이버 예약, 첫 방문 준비, 진료시간과 오시는 길, 무료 주차를 안내합니다.">
+  <meta property="og:url" content="https://ssakarin.github.io/khhongik-website/visit.html">
+  <meta property="og:image" content="https://ssakarin.github.io/khhongik-website/assets/clinic-team.webp">
   <link rel="icon" type="image/webp" href="assets/icon.webp">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
@@ -18,6 +25,7 @@
         <a href="care.html">주요 진료</a>
         <a href="doctors.html">의료진</a>
         <a href="visit.html" aria-current="page">방문 안내</a>
+        <a href="fees.html">진료비 안내</a>
         <a href="blog.html">소식·건강정보</a>
       </nav>
       <a class="header-phone" href="tel:0512620780">051-262-0780</a>
@@ -39,7 +47,7 @@
           </ul>
         </div>
         <div class="visit-actions">
-          <a class="button button-primary" href="https://m.place.naver.com/hospital/13249544/booking">네이버 예약 <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="https://m.booking.naver.com/booking/13/bizes/988951">네이버 예약 <span aria-hidden="true">↗</span></a>
           <a class="button button-outline" href="tel:0512620780">051-262-0780</a>
         </div>
       </section>
@@ -52,7 +60,11 @@
             <div><dt>토요일</dt><dd>09:30–14:00</dd></div>
             <div><dt>일요일</dt><dd>휴진</dd></div>
           </dl>
-          <p class="visit-note">공휴일 진료는 전화로 확인해 주세요.</p>
+          <div class="visit-notice" id="notice">
+            <h3>공휴일·임시 휴진</h3>
+            <p>공휴일이나 일정이 바뀐 날에는 네이버 플레이스 또는 전화로 확인해 주세요.</p>
+            <a class="text-link" href="https://m.place.naver.com/hospital/13249544/home">네이버 플레이스 <span aria-hidden="true">↗</span></a>
+          </div>
           <a class="visit-link" href="doctors.html#schedule">의료진별 진료 일정 <span aria-hidden="true">→</span></a>
         </article>
         <article class="visit-card directions" id="directions">
@@ -60,10 +72,14 @@
           <address>부산 사하구 다대로 698 수정프라자 3층</address>
           <p class="visit-note">다대포해수욕장역 1번 출구 앞</p>
           <img class="map" src="assets/parking-map.webp" width="1192" height="499" alt="다대포해수욕장역 1번 출구에서 한의원 입구와 대우 주차장으로 가는 약도">
-          <p class="parking"><strong>대우 주차장 무료 주차</strong><span>주차 후 접수 시 말씀해 주세요.</span></p>
+          <p class="parking"><strong>대우 주차장 무료 주차</strong><span>건물 이면도로 입구 대각선 맞은편입니다. 주차 후 접수할 때 말씀해 주세요.</span></p>
           <a class="button button-map" href="https://map.naver.com/p/entry/place/13249544">네이버 지도 <span aria-hidden="true">↗</span></a>
         </article>
       </div>
+      <figure class="clinic-entrance">
+        <img src="assets/clinic-entrance.webp" width="1080" height="720" loading="lazy" alt="나무 벽 오른쪽에 한의원 이름이 표시된 유리 출입문">
+        <figcaption><strong>수정프라자 3층 한의원 입구</strong><span>유리문에 경희홍익한의원 이름이 보입니다.</span></figcaption>
+      </figure>
       <section class="visit-card visit-faq" id="faq" aria-labelledby="faq-title">
         <h2 id="faq-title">자주 묻는 질문</h2>
         <dl>
@@ -81,7 +97,7 @@
           </div>
           <div>
             <dt>진료비나 서류 발급을 미리 확인할 수 있나요?</dt>
-            <dd>궁금한 진료 항목이나 필요한 서류 이름을 <a href="tel:0512620780">전화로 알려 주세요</a>.</dd>
+            <dd><a href="fees.html">비급여 진료비와 제증명 수수료</a>를 확인하세요. 서류 발급에 필요한 준비물은 <a href="tel:0512620780">전화로 문의</a>할 수 있습니다.</dd>
           </div>
         </dl>
       </section>
