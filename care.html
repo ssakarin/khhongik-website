@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="경희홍익한의원의 척추·관절 추나, 초음파 약침, 체질 한약 및 검사·치료 안내입니다.">
+  <meta name="description" content="경희홍익한의원의 불면·화병, 노인 진료, 교정·추나, 교통사고, 자율신경, 다이어트, 여성 진료와 검사·치료를 안내합니다.">
   <meta name="theme-color" content="#152f49">
   <title>주요 진료 | 경희홍익한의원</title>
   <link rel="canonical" href="https://ssakarin.github.io/khhongik-website/care.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="경희홍익한의원">
   <meta property="og:title" content="주요 진료 | 경희홍익한의원">
-  <meta property="og:description" content="경희홍익한의원의 척추·관절 추나, 초음파 약침, 체질 한약 및 검사·치료 안내입니다.">
+  <meta property="og:description" content="경희홍익한의원의 불면·화병, 노인 진료, 교정·추나, 교통사고, 자율신경, 다이어트, 여성 진료와 검사·치료를 안내합니다.">
   <meta property="og:url" content="https://ssakarin.github.io/khhongik-website/care.html">
   <meta property="og:image" content="https://ssakarin.github.io/khhongik-website/assets/clinic-team.webp">
   <link rel="icon" type="image/webp" href="assets/icon.webp">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
@@ -22,6 +22,7 @@
     <div class="container header-inner">
       <a class="brand" href="index.html"><img src="assets/logo.webp" width="630" height="100" alt="경희홍익한의원"></a>
       <nav aria-label="주 메뉴">
+        <a href="about.html">한의원 소개</a>
         <a href="care.html" aria-current="page">주요 진료</a>
         <a href="doctors.html">의료진</a>
         <a href="visit.html">방문 안내</a>
@@ -37,28 +38,49 @@
       <h1 class="page-title">주요 진료</h1>
     </div>
     <section class="content-block" aria-labelledby="care-topics-title">
-      <h2 id="care-topics-title">증상·상담별 안내</h2>
-      <div class="care-grid">
-        <a class="care-card" href="care-spine.html">
-          <h3>척추·관절 통증</h3>
-          <p>허리·목·어깨·무릎 등 통증이 있는 부위와 움직임을 살펴봅니다.</p>
-          <span class="card-link">자세히 보기 <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="care-card" href="care-traffic-accident.html">
-          <h3>교통사고 후유증</h3>
-          <p>사고 후 생긴 통증과 불편이 언제부터 나타났는지 확인합니다.</p>
-          <span class="card-link">자세히 보기 <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="care-card" href="care-herbal-consultation.html">
+      <h2 id="care-topics-title">진료 분야</h2>
+      <div class="care-grid clinic-grid">
+        <article class="care-card" id="sleep">
+          <h3>불면·화병 클리닉</h3>
+          <p class="clinic-provider">대표원장 진료</p>
+          <p>급성·만성 불면증, 가슴 두근거림, 상열감, 불안장애</p>
+        </article>
+        <article class="care-card" id="senior">
+          <h3>노인 클리닉</h3>
+          <p class="clinic-provider">대표원장 진료</p>
+          <p>만성피로, 불면, 순환장애, 퇴행성 관절증, 뇌기능장애</p>
+        </article>
+        <article class="care-card" id="correction">
+          <h3>교정 클리닉</h3>
+          <p class="clinic-provider">추나 전담 원장 진료</p>
+          <p>만성 목·어깨 통증, 일자목, 연 3회 이상 재발하는 요통, 퇴행성 디스크·척추관 협착증</p>
+          <a class="text-link" href="care-spine.html">척추·관절 통증 안내 <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="care-card" id="traffic">
+          <h3>교통사고 클리닉</h3>
+          <p class="clinic-provider">추나 전담 원장 진료</p>
+          <p>교통사고 후유증 치료, 추나, 약침</p>
+          <a class="text-link" href="care-traffic-accident.html">교통사고 후유증 안내 <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="care-card" id="autonomic">
+          <h3>자율신경 클리닉</h3>
+          <p>과민성 방광, 과민성 대장증후군, 두전증(머리 떨림), 수전증(손 떨림)</p>
+        </article>
+        <article class="care-card" id="weight">
+          <h3>다이어트</h3>
+          <p class="clinic-provider">밀착 관리</p>
+          <p>건강한 체중 관리, 고도비만, 소아비만, 산후 체중 관리, 결혼 전 체중 관리</p>
+          <a class="text-link" href="care-weight-management.html">체중 관리 안내 <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="care-card" id="womens-health">
+          <h3>여성 클리닉</h3>
+          <p>갱년기, 다한증, 산후관리, 생리통, 수족냉증</p>
+        </article>
+        <div class="care-card">
           <h3>체질·보약 상담</h3>
           <p>현재 불편한 점과 체질, 복용 중인 약 등을 살펴보고 상담합니다.</p>
-          <span class="card-link">자세히 보기 <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="care-card" href="care-weight-management.html">
-          <h3>체중 관리</h3>
-          <p>린다이어트 상담에서 체중 관리 목표와 평소 식습관을 확인합니다.</p>
-          <span class="card-link">자세히 보기 <span aria-hidden="true">→</span></span>
-        </a>
+          <a class="text-link" href="care-herbal-consultation.html">체질·보약 상담 안내 <span aria-hidden="true">→</span></a>
+        </div>
       </div>
     </section>
     <section class="content-block" aria-labelledby="care-methods-title">

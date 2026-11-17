@@ -64,7 +64,7 @@ p, h1, h2, h3, address { word-break: keep-all; overflow-wrap: break-word; }
 }
 .brand { flex-shrink: 0; }
 .brand img { width: 206px; }
-.header-inner nav { display: flex; align-items: center; gap: clamp(17px, 2.35vw, 38px); }
+.header-inner nav { display: flex; align-items: center; gap: clamp(12px, 1.85vw, 30px); }
 .header-inner nav a {
   display: inline-flex;
   align-items: center;
@@ -111,8 +111,6 @@ h1 { font-size: clamp(38px, 4.65vw, 72px); font-weight: 820; letter-spacing: -.0
   line-height: 1.65;
 }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
-.hero-about-link { display: inline-block; margin-top: 12px; }
-.hero-about-link + .actions { margin-top: 22px; }
 .button {
   min-height: 48px;
   display: inline-flex;
@@ -196,11 +194,13 @@ h1 { font-size: clamp(38px, 4.65vw, 72px); font-weight: 820; letter-spacing: -.0
   border-radius: 12px;
   background: var(--surface);
 }
-.care-card:hover, .care-card:target { border-color: var(--line-accent); background: var(--ice); }
+a.care-card:hover, .care-card:target { border-color: var(--line-accent); background: var(--ice); }
 .care-card h3 { font-size: 23px; font-weight: 760; }
 .care-card p { margin-block: 9px 17px; color: var(--muted); font-size: 15px; }
 .card-link, .text-link { color: var(--blue); font-size: 14px; font-weight: 720; }
 .care-card .card-link { margin-top: auto; }
+.clinic-grid .clinic-provider { margin-bottom: 0; color: var(--blue); font-weight: 720; }
+.clinic-grid .text-link { align-self: flex-start; margin-top: auto; }
 .card-link span, .text-link span { margin-inline-start: 4px; }
 summary { cursor: pointer; list-style: none; }
 summary::-webkit-details-marker { display: none; }
@@ -266,10 +266,27 @@ details[open] .expand-icon { transform: rotate(45deg); }
   gap: clamp(16px, 4vw, 50px);
 }
 .about-story p + p { margin-top: 10px; }
-.about-story .text-link, .about-approach .text-link {
+.about-story .text-link {
   display: inline-block;
   margin-top: 20px;
 }
+.about-care-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.about-care-links a {
+  display: block;
+  padding: 9px 13px;
+  border: 1px solid var(--line-accent);
+  border-radius: 7px;
+  color: var(--blue);
+  font-weight: 650;
+}
+.about-care-links a:hover { background: var(--ice); }
 .about-approach { background: var(--surface); }
 .about-principles {
   display: grid;
@@ -408,7 +425,7 @@ details[open] .expand-icon { transform: rotate(45deg); }
   .container { width: calc(100% - 56px); }
   .header-inner { gap: 16px; }
   .brand img { width: 175px; }
-  .header-inner nav { gap: 17px; }
+  .header-inner nav { gap: 12px; }
   .header-phone { font-size: 14px; padding-inline: 11px; }
   .hero-inner { min-height: 405px; }
   .care-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -418,16 +435,19 @@ details[open] .expand-icon { transform: rotate(45deg); }
   .doctor-info { padding: 18px; }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   :root { --header-height: 97px; }
-  .container { width: calc(100% - 36px); }
-  body { padding-bottom: calc(54px + env(safe-area-inset-bottom)); }
   .header-inner { flex-wrap: wrap; gap: 0 12px; align-content: space-between; padding-top: 8px; }
   .brand { display: flex; align-items: center; min-height: 40px; }
   .brand img { width: 165px; }
   .header-inner nav { order: 2; flex: 0 0 100%; justify-content: space-between; gap: 7px; }
   .header-inner nav a { font-size: 14px; }
   .header-phone { font-size: 13px; padding: 5px 9px; }
+}
+
+@media (max-width: 800px) {
+  .container { width: calc(100% - 36px); }
+  body { padding-bottom: calc(54px + env(safe-area-inset-bottom)); }
   .hero-inner { min-height: 0; grid-template-columns: 1fr; gap: 25px; padding-block: 34px 20px; }
   .hero-location { font-size: 14px; margin-bottom: 12px; }
   h1 { font-size: clamp(36px, 9.2vw, 57px); }
@@ -489,6 +509,16 @@ details[open] .expand-icon { transform: rotate(45deg); }
   #herbal-month :is(th, td) { padding-inline: 5px; font-size: 12px; }
 }
 
+@media (max-width: 460px) {
+  :root { --header-height: 129px; }
+  .header-inner nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 6px;
+  }
+  .header-inner nav a { min-height: 40px; justify-content: center; }
+}
+
 @media (max-width: 385px) {
   .fee-scroll-note { display: block; }
 }
@@ -496,7 +526,8 @@ details[open] .expand-icon { transform: rotate(45deg); }
 @media (max-width: 350px) {
   .doctor-card { grid-template-columns: 100px 1fr; }
   .doctor-info { padding: 14px; }
-  .header-inner nav { gap: 5px; }
+  .brand img { width: 150px; }
+  .header-inner nav { column-gap: 5px; }
   .header-inner nav a { font-size: 12px; }
 }
 
