@@ -139,19 +139,6 @@ h1 { font-size: clamp(38px, 4.65vw, 72px); font-weight: 820; letter-spacing: -.0
   overflow: hidden;
 }
 .hero-photo img { width: 100%; }
-.hero-doctors {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  padding: 13px 12%;
-  background: var(--white);
-  border-top: 1px solid var(--line);
-  text-align: center;
-  color: var(--muted);
-  font-size: 14px;
-}
-.hero-doctors strong { margin-inline-end: 3px; color: var(--ink); font-size: 17px; }
-
 .quick-info { background: var(--ice); border-bottom: 1px solid var(--line); }
 .quick-inner { display: grid; grid-template-columns: 1fr 1fr 1.48fr; }
 .quick-inner > * { min-width: 0; padding: 20px 28px; }
@@ -435,8 +422,6 @@ details[open] .expand-icon { transform: rotate(45deg); }
   .hero-description { margin-top: 16px; }
   .actions { margin-top: 23px; }
   .hero-photo { border-radius: 12px; }
-  .hero-doctors { padding: 9px 11%; font-size: 13px; }
-  .hero-doctors strong { font-size: 15px; }
   .quick-inner { grid-template-columns: repeat(2, 1fr); }
   .quick-inner > * { padding: 12px 15px; }
   .quick-inner > *:last-child { grid-column: 1 / -1; border-inline-start: 0; border-top: 1px solid var(--line); padding-inline-start: 0; }
