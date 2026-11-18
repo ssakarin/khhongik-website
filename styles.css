@@ -340,7 +340,7 @@ details[open] .expand-icon { transform: rotate(45deg); }
 .doctor-role { color: var(--blue); font-size: 14px; font-weight: 740; margin-bottom: 6px; }
 .doctor-info h2 { font-size: clamp(29px, 3.3vw, 41px); font-weight: 800; }
 .doctor-school { margin-block: 12px 13px; color: var(--muted); font-size: 15px; }
-.doctor-info summary { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 42px; border-top: 1px solid var(--line); color: var(--blue); font-size: 14px; font-weight: 730; }
+.doctor-bio-title { padding-top: 11px; border-top: 1px solid var(--line); color: var(--blue); font-size: 14px; font-weight: 730; }
 .doctor-info ul { margin: 0; padding-inline-start: 17px; color: var(--muted); font-size: 14px; }
 .doctor-info li + li { margin-top: 4px; }
 .doctor-schedule { grid-column: 1 / -1; padding: clamp(12px, 2vw, 24px); border-top: 1px solid var(--line); }
