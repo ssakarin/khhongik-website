@@ -187,7 +187,6 @@ a.care-card:hover, .care-card:target { border-color: var(--line-accent); backgro
 .care-card p { margin-block: 9px 17px; color: var(--muted); font-size: 15px; }
 .card-link, .text-link { color: var(--blue); font-size: 14px; font-weight: 720; }
 .care-card .card-link { margin-top: auto; }
-.clinic-grid .text-link { align-self: flex-start; margin-top: auto; }
 .card-link span, .text-link span { margin-inline-start: 4px; }
 summary { cursor: pointer; list-style: none; }
 summary::-webkit-details-marker { display: none; }
