@@ -250,7 +250,7 @@ details[open] .expand-icon { transform: rotate(45deg); }
   gap: clamp(26px, 5vw, 76px);
   padding-block: clamp(36px, 5vw, 72px);
 }
-.about-hero h1 { font-size: clamp(34px, 3.65vw, 56px); }
+.about-hero h1 { font-size: clamp(38px, 4vw, 60px); }
 .about-hero-photo {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -267,6 +267,9 @@ details[open] .expand-icon { transform: rotate(45deg); }
   gap: clamp(16px, 4vw, 50px);
 }
 .about-story p + p { margin-top: 10px; }
+.about-greeting { display: grid; grid-template-columns: minmax(120px, .65fr) minmax(0, 1.7fr); align-items: start; gap: 24px; }
+.about-greeting-photo { width: 100%; max-width: 220px; aspect-ratio: 1; object-fit: cover; border-radius: 12px; }
+.about-greeting-copy { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.85; }
 .about-story .text-link {
   display: inline-block;
   margin-top: 20px;
@@ -297,12 +300,6 @@ details[open] .expand-icon { transform: rotate(45deg); }
 }
 .about-principles article { padding-top: 18px; border-top: 2px solid var(--line-accent); }
 .about-principles p { margin-top: 9px; }
-.about-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 24px;
-}
 .about-visit {
   display: flex;
   flex-wrap: wrap;
@@ -319,7 +316,8 @@ details[open] .expand-icon { transform: rotate(45deg); }
   .about-hero-inner, .about-story { grid-template-columns: 1fr; }
 }
 @media (max-width: 580px) {
-  .about-principles, .about-gallery { grid-template-columns: 1fr; }
+  .about-principles { grid-template-columns: 1fr; }
+  .about-greeting { grid-template-columns: minmax(90px, .55fr) minmax(0, 1.8fr); gap: 16px; }
 }
 .equipment-photo { max-width: 480px; margin-bottom: 28px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 
