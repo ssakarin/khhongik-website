@@ -242,34 +242,27 @@ details[open] .expand-icon { transform: rotate(45deg); }
 .page-photo img { width: 100%; }
 .page-photo figcaption { padding: 11px 14px; color: var(--muted); font-size: 14px; font-weight: 680; }
 
-.about-hero { background: var(--ice); color: var(--navy); }
-.about-hero-inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: center;
-  gap: clamp(26px, 5vw, 76px);
-  padding-block: clamp(36px, 5vw, 72px);
-}
-.about-hero h1 { font-size: clamp(38px, 4vw, 60px); }
-.about-hero-photo {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 16px;
-}
+.about-greeting-section { background: var(--ice); }
 .about-section { padding-block: clamp(40px, 6vw, 84px); }
 .about-section h2 { font-size: clamp(26px, 3vw, 40px); color: var(--navy); }
 .about-section h3 { font-size: clamp(19px, 1.85vw, 24px); }
 .about-section p { color: var(--muted); line-height: 1.7; }
+.about-greeting-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, .8fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: clamp(28px, 6vw, 72px);
+}
 .about-story {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
   gap: clamp(16px, 4vw, 50px);
 }
 .about-story p + p { margin-top: 10px; }
-.about-greeting { display: grid; grid-template-columns: minmax(120px, .65fr) minmax(0, 1.7fr); align-items: start; gap: 24px; }
-.about-greeting-photo { width: 100%; max-width: 220px; aspect-ratio: 1; object-fit: cover; border-radius: 12px; }
-.about-greeting-copy { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.85; }
+.about-greeting-photo { width: 100%; max-width: 360px; aspect-ratio: 1; object-fit: cover; border-radius: 16px; }
+.about-greeting-copy { max-width: 700px; font-size: clamp(18px, 1.5vw, 21px); line-height: 1.85; }
+.about-greeting-copy h1 { margin-bottom: 22px; color: var(--navy); font-size: clamp(32px, 3.8vw, 46px); letter-spacing: -.04em; }
+.about-greeting-copy p + p { margin-top: 16px; }
 .about-story .text-link {
   display: inline-block;
   margin-top: 20px;
@@ -313,11 +306,11 @@ details[open] .expand-icon { transform: rotate(45deg); }
 }
 .about-visit p { margin-top: 6px; }
 @media (max-width: 800px) {
-  .about-hero-inner, .about-story { grid-template-columns: 1fr; }
+  .about-greeting-layout, .about-story { grid-template-columns: 1fr; }
+  .about-greeting-photo { max-width: 260px; margin-inline: auto; }
 }
 @media (max-width: 580px) {
   .about-principles { grid-template-columns: 1fr; }
-  .about-greeting { grid-template-columns: minmax(90px, .55fr) minmax(0, 1.8fr); gap: 16px; }
 }
 .equipment-photo { max-width: 480px; margin-bottom: 28px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 
