@@ -284,15 +284,6 @@ details[open] .expand-icon { transform: rotate(45deg); }
   font-weight: 650;
 }
 .about-care-links a:hover { background: var(--ice); }
-.about-approach { background: var(--surface); }
-.about-principles {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  margin-top: 26px;
-}
-.about-principles article { padding-top: 18px; border-top: 2px solid var(--line-accent); }
-.about-principles p { margin-top: 9px; }
 .about-visit {
   display: flex;
   flex-wrap: wrap;
@@ -308,9 +299,6 @@ details[open] .expand-icon { transform: rotate(45deg); }
 @media (max-width: 800px) {
   .about-greeting-layout, .about-story { grid-template-columns: 1fr; }
   .about-greeting-photo { max-width: 260px; margin-inline: auto; }
-}
-@media (max-width: 580px) {
-  .about-principles { grid-template-columns: 1fr; }
 }
 .equipment-photo { max-width: 480px; margin-bottom: 28px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 
