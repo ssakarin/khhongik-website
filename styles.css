@@ -289,8 +289,9 @@ details[open] .expand-icon { transform: rotate(45deg); }
 .about-equipment-item img {
   display: block;
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
+  height: 240px;
+  padding: 14px;
+  object-fit: contain;
   background: var(--ice);
 }
 .about-equipment-item h3 { margin: 16px; font-size: 1.05rem; }
