@@ -269,6 +269,17 @@ details[open] .expand-icon { transform: rotate(45deg); }
   font-weight: 650;
 }
 .about-care-links a:hover { background: var(--ice); }
+.about-equipment-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 240px);
+  align-items: center;
+  gap: clamp(20px, 4vw, 42px);
+  padding: clamp(20px, 4vw, 40px);
+  border-radius: 16px;
+  background: var(--ice);
+}
+.about-equipment-card p { max-width: 680px; margin-top: 14px; }
+.about-equipment-photo { width: 100%; border-radius: 12px; }
 .about-visit {
   display: flex;
   flex-wrap: wrap;
@@ -284,6 +295,8 @@ details[open] .expand-icon { transform: rotate(45deg); }
 @media (max-width: 800px) {
   .about-greeting-layout, .about-story { grid-template-columns: 1fr; }
   .about-greeting-photo { max-width: 260px; margin-inline: auto; }
+  .about-equipment-card { grid-template-columns: 1fr; }
+  .about-equipment-photo { max-width: 240px; }
 }
 .equipment-photo { max-width: 480px; margin-bottom: 28px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 
