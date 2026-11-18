@@ -293,8 +293,7 @@ details[open] .expand-icon { transform: rotate(45deg); }
   object-fit: cover;
   background: var(--ice);
 }
-.about-equipment-item h3 { margin: 16px 16px 8px; font-size: 1.05rem; }
-.about-equipment-item p { margin: 0 16px 18px; color: var(--muted); font-size: .94rem; line-height: 1.65; }
+.about-equipment-item h3 { margin: 16px; font-size: 1.05rem; }
 .about-visit {
   display: flex;
   flex-wrap: wrap;
