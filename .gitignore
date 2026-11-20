@@ -1,0 +1,64 @@
+# Blog drafts and local source materials
+/형방지황탕_블로그_완성본/
+/형방지황탕_블로그_완성본.zip
+/작업자료/
+/사진/
+/참고자료/
+/원본사진/
+/백업/
+/backups/
+
+# Local environments, dependencies and caches
+.env
+.env.*
+!.env.example
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+.playwright/
+
+# Generated output and local verification artifacts
+/site/
+/dist/
+/build/
+/output/
+/artifacts/
+/tmp/
+/temp/
+playwright-report/
+test-results/
+*.log
+*.tmp
+*.bak
+*.orig
+*~
+
+# Machine and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Unused image originals and older variants, kept locally
+/assets/about-corridor.webp
+/assets/about-waiting-room.webp
+/assets/clinic-entrance.webp
+/assets/clinic-reception.webp
+/assets/clinic-team-hero-small.webp
+/assets/clinic-team-hero.webp
+/assets/equipment-decompression.png
+/assets/equipment-ibalance.png
+/assets/equipment-omnifit.png
+/assets/equipment-pt10.jpg
+/assets/equipment-shockwave.png
+/assets/equipment-trf-plus.jpg
+/assets/equipment-ultrasound.png
+/assets/examinations.webp
+/assets/heo.webp
+/assets/kim-portrait.webp
+/assets/kim.webp
